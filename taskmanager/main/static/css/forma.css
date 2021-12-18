@@ -1,0 +1,142 @@
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url('../fonts/OpenSans-Regular.ttf'); 
+}
+
+@font-face{
+  font-family:'FontAwesome';
+  src:url('../fonts/fontawesome-webfont.eot');
+  src:url('../fonts/fontawesome-webfont.svg') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0');
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+.container {
+  width: 100%;  
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #e9faff;
+}
+
+.login {
+  width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 23px;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.login-title {
+  display: block;
+  font-family: OpenSans-Regular;
+  font-size: 30px;
+  color: #555555;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 23px;
+}
+
+.wrap {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.2;
+}
+
+input.input {
+  height: 68px;
+  padding: 0 25px 0 25px;
+}
+
+.sumbit {
+  padding-bottom: 23px;
+  margin-top: 20px;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 60px;
+  background-color: #4272d7;
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+  color: #fff;
+}
+
+.login-form:hover {
+  background-color: #333333;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: #fff;
+  border: 1px solid #c80000;
+  border-radius: 2px;
+  padding: 4px 25px 4px 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 12px;
+  pointer-events: none;
+  font-family: OpenSans-Regular;
+  color: #c80000;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+  visibility: hidden;
+}
+
+.alert-validate::after {
+  content: "\f12a";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  color: #c80000;
+  font-size: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 18px;
+}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
